@@ -127,6 +127,9 @@ ip_inverse_table = [
     33, 1, 41, 9, 49, 17, 57, 25
 ]
 
+def hex_to_bin(hex_string):
+    return ''.join(format(int(c, 16), '04b') for c in hex_string)
+
 def str_to_bin(text):
     return ''.join(format(ord(c), '08b') for c in text)
 
